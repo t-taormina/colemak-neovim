@@ -8,7 +8,7 @@ This is a lua plugin that I wrote this for myself after using different remappin
 use('t-taormina/colemak-neovim')   
 ```
 - :w :so :PackerSync 
-- And then in your $HOME/.config/nvim/after directory create the file colemak-neovim.lua and place the following lua code
+- And then in your $HOME/.config/nvim/after directory create the file *colemak-neovim.lua* and place the following lua code
 ```
 local map = require("colemak-neovim.map_keys")                                  
 map.map_keys()
