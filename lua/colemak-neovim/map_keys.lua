@@ -1,4 +1,6 @@
-local function map_keys()
+local M = {}
+
+function M.map_keys()
     --colemak to replace traditional vim commands
     
     -- u: replaces 'i' for insert / can also try using 'm' for insert
@@ -34,4 +36,4 @@ local function map_keys()
     vim.keymap.set("n", "U", "I")
 end
 
-map_keys()
+return M
