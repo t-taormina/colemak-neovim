@@ -2,7 +2,7 @@ local M = {}
 
 function M.map_keys()
     --colemak to replace traditional vim commands
-    
+
     -- u: replaces 'i' for insert / can also try using 'm' for insert
     vim.keymap.set("n", "u", "i")
     -- l: replaces 'u' for undo 
@@ -29,8 +29,9 @@ function M.map_keys()
     -- H: acts the same as lowercase 'h'
     vim.keymap.set("n", "H", "h")
 
-    -- vim.keymap.set("n", "k", "n")
-    -- vim.keymap.set("n", "K", "N")
+    -- k: acts as "n" primarily for the 'next' move when searching text
+    vim.keymap.set("n", "k", "n")
+    vim.keymap.set("n", "K", "N")
 
     vim.keymap.set("n", "u", "i")
     vim.keymap.set("n", "U", "I")
